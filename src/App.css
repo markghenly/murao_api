@@ -1,0 +1,143 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Default font */
+  background-color: #141212; /* Light gray background */
+  color: #333; /* Dark text color */
+}
+
+main {
+  width: 100%;
+  max-width: 1200px; /* Increased max-width */
+  margin: auto;
+  padding: 1.5em;
+  background-color: #7cbada; /* White background */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+h1 {
+  text-align: center;
+  color: #320e05; 
+  margin-bottom: 1em;
+}
+
+/* Add posts form */
+form {
+  border: 2px solid #120d0f; 
+  padding: 1.5em;
+  border-radius: 8px;
+  background-color: #77de6f; /* White background */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  max-width: 450px; /* Increased max-width */
+  margin: auto;
+}
+
+form h2 {
+  text-align: center;
+  margin-top: 0;
+  color: #0b0406; /* Pink color */
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column; /* Stacked layout */
+  margin-bottom: 1.5em;
+}
+
+label, input, textarea {
+  display: block;
+  border-radius: 8px;
+  font-size: 18px; /* Increased font size */
+  padding: 0.8em;
+}
+
+label {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #333; /* Dark text color */
+}
+
+textarea {
+  resize: vertical;
+  height: 180px; /* Increased height */
+}
+
+.btn-submit {
+  font-size: 20px; /* Increased font size */
+  margin: auto;
+  display: block;
+  border-radius: 8px;
+  padding: 0.7em 1.2em;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  background-color: #1236d3; /* Pink background */
+  color: #fff; /* White text color */
+  border: none;
+}
+
+.btn-submit:hover, .btn-submit:focus {
+  transform: scale(1.05);
+  background-color: #023049; /* Darker pink on hover */
+}
+
+/* Posts */
+.posts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted grid columns */
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.posts-container h2 {
+  text-align: center;
+  margin-top: 0;
+  color: #500303; 
+  grid-column: 1/-1;
+}
+
+.post-card {
+  border: 2px solid #2196F3; /* Blue border */
+  border-radius: 8px;
+  padding: 1em;
+  position: relative;
+  background-color: #77de6f; /* White background */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.post-title {
+  margin-top: 0;
+  color: #333; /* Dark text color */
+  font-size: 20px; /* Increased font size */
+}
+
+.post-body {
+  margin-bottom: 60px; /* Increased margin */
+  color: #555; /* Slightly darker text color */
+}
+
+.btn-delete {
+  position: absolute;
+  bottom: 15px;
+  left: 30%;
+  right: 30%;
+  font-size: 18px; /* Font size remains the same */
+  margin: auto;
+  display: block;
+  border-radius: 8px;
+  padding: 0.7em 1.2em; /* Increased padding for a larger button */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  background-color: #a20808; /* Pink background */
+  color: #fff; /* White text color */
+  border: none;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+
+.btn-delete:hover, .btn-delete:focus {
+  transform: scale(1.05);
+  background-color: #48021c; /* Darker pink on hover */
+}
